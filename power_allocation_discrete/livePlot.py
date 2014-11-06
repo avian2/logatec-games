@@ -60,7 +60,7 @@ class GameLivePlot():
         plot.legend(loc=0, bbox_to_anchor=(1.1, 1.1))
         plot.axis([0, 70, -30, 0])
         plot.draw()
-        time.sleep(2)
+        time.sleep(.2)
 
 
     def test_plot(self):
