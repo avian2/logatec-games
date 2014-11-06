@@ -10,6 +10,7 @@ A dynamic power allocation game is played between 4 players. Mapping between pla
 import gameNode
 from powerGame import PowerGame
 
+from matplotlib import pyplot
 
 def main():
     # define coordinator id
@@ -48,6 +49,7 @@ def main():
         powerGame.measureGains()
     powerGame.playGame(nr_runs)
 
+    pyplot.show(block=True)
 
 if __name__ == '__main__':
     main()
