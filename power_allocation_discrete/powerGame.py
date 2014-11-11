@@ -834,18 +834,24 @@ class PowerGame():
                 break
             elif gameIterations == 13:
                 mask[3] = False
+		print "\x1b[1;31m"
                 print "Player 4 has left the game!!"
+		print "\x1b[0m"
                 self.resetLogicalDictionary(self.playerEvent, False)
                 self.playerEvent[0] = True
             elif gameIterations == 26:
                 mask[3] = True
+		print "\x1b[1;31m"
                 print "Player 4 rejoins the game!!"
+		print "\x1b[0m"
                 self.resetLogicalDictionary(self.playerEvent, False)
                 self.playerEvent[3] = True
             elif gameIterations == 39:
                 mask[3] = False
                 mask[2] = False
+		print "\x1b[1;31m"
                 print "players 3 and 4 leave the game!!"
+		print "\x1b[0m"
                 self.resetLogicalDictionary(self.playerEvent, False)
                 self.playerEvent[1] = True
             if self.checkPowerEventWithMask(mask):
